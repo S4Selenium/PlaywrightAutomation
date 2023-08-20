@@ -1,0 +1,653 @@
+{
+  "config": {
+    "configFile": "D:\\SarinPS_GM_Assignment\\playwright.config.ts",
+    "rootDir": "D:/SarinPS_GM_Assignment",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 4,
+      "totalTime": 50748.358
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-result.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "always"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "D:/SarinPS_GM_Assignment/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/SarinPS_GM_Assignment",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.37.0",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "tests\\e2e\\api\\Service.test.ts",
+      "file": "tests/e2e/api/Service.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Adding new Book to user",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "failed",
+                  "duration": 261,
+                  "error": {
+                    "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m201\u001b[39m\nReceived: \u001b[31m400\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m201\u001b[39m\nReceived: \u001b[31m400\u001b[39m\n    at D:\\SarinPS_GM_Assignment\\tests\\e2e\\api\\Service.test.ts:76:37",
+                    "location": {
+                      "file": "D:\\SarinPS_GM_Assignment\\tests\\e2e\\api\\Service.test.ts",
+                      "column": 37,
+                      "line": 76
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 74 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 75 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mjson())\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 76 |\u001b[39m     expect(\u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m201\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 77 |\u001b[39m     expect(\u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mok())\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 78 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 79 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\SarinPS_GM_Assignment\\tests\\e2e\\api\\Service.test.ts",
+                        "column": 37,
+                        "line": 76
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m201\u001b[39m\nReceived: \u001b[31m400\u001b[39m\n\n\u001b[0m \u001b[90m 74 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 75 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mjson())\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 76 |\u001b[39m     expect(\u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m201\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 77 |\u001b[39m     expect(\u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mok())\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 78 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 79 |\u001b[39m\u001b[0m\n\n\u001b[2m    at D:\\SarinPS_GM_Assignment\\tests\\e2e\\api\\Service.test.ts:76:37\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "{\"userId\":\"c924f704-8877-457d-b60d-84f16499d6e5\",\"username\":\"Admin\",\"password\":\"Admin@123\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6IkFkbWluIiwicGFzc3dvcmQiOiJBZG1pbkAxMjMiLCJpYXQiOjE2OTIwOTc3MzV9.TpAmn1kQ1xuATYZq4mX2lYvEvS95YsVHhfiZrrgGe3c\",\"expires\":\"2023-08-22T11:08:55.000Z\",\"created_date\":\"2020-06-21T07:34:08.000Z\",\"isActive\":false}\n"
+                    },
+                    {
+                      "text": "https://demoqa.com/BookStore/v1/Books\n"
+                    },
+                    {
+                      "text": "{\n  code: \u001b[32m'1210'\u001b[39m,\n  message: \u001b[32m\"ISBN already present in the User's Collection!\"\u001b[39m\n}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-08-15T15:02:29.644Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "D:\\SarinPS_GM_Assignment\\tests\\e2e\\api\\Service.test.ts",
+                    "column": 37,
+                    "line": 76
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "0b44f1cfde13a232ace9-2ad5ec5ec18d099f264b",
+          "file": "tests/e2e/api/Service.test.ts",
+          "line": 63,
+          "column": 5
+        },
+        {
+          "title": "Adding already existing book to User",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "passed",
+                  "duration": 267,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{\"userId\":\"c924f704-8877-457d-b60d-84f16499d6e5\",\"username\":\"Admin\",\"password\":\"Admin@123\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6IkFkbWluIiwicGFzc3dvcmQiOiJBZG1pbkAxMjMiLCJpYXQiOjE2OTIwOTc3MzV9.TpAmn1kQ1xuATYZq4mX2lYvEvS95YsVHhfiZrrgGe3c\",\"expires\":\"2023-08-22T11:08:55.000Z\",\"created_date\":\"2020-06-21T07:34:08.000Z\",\"isActive\":false}\n"
+                    },
+                    {
+                      "text": "https://demoqa.com/BookStore/v1/Books\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-08-15T15:02:29.647Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0b44f1cfde13a232ace9-d1415cb34cdced342251",
+          "file": "tests/e2e/api/Service.test.ts",
+          "line": 81,
+          "column": 5
+        },
+        {
+          "title": "Deleting newly added book from user",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "failed",
+                  "duration": 206,
+                  "error": {
+                    "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m204\u001b[39m\nReceived: \u001b[31m401\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m204\u001b[39m\nReceived: \u001b[31m401\u001b[39m\n    at D:\\SarinPS_GM_Assignment\\tests\\e2e\\api\\Service.test.ts:108:37",
+                    "location": {
+                      "file": "D:\\SarinPS_GM_Assignment\\tests\\e2e\\api\\Service.test.ts",
+                      "column": 37,
+                      "line": 108
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 106 |\u001b[39m         }\u001b[0m\n\u001b[0m \u001b[90m 107 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 108 |\u001b[39m     expect(\u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m204\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 109 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 110 |\u001b[39m })\u001b[33m;\u001b[39m    \u001b[0m\n\u001b[0m \u001b[90m 111 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\SarinPS_GM_Assignment\\tests\\e2e\\api\\Service.test.ts",
+                        "column": 37,
+                        "line": 108
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m204\u001b[39m\nReceived: \u001b[31m401\u001b[39m\n\n\u001b[0m \u001b[90m 106 |\u001b[39m         }\u001b[0m\n\u001b[0m \u001b[90m 107 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 108 |\u001b[39m     expect(\u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m204\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 109 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 110 |\u001b[39m })\u001b[33m;\u001b[39m    \u001b[0m\n\u001b[0m \u001b[90m 111 |\u001b[39m\u001b[0m\n\n\u001b[2m    at D:\\SarinPS_GM_Assignment\\tests\\e2e\\api\\Service.test.ts:108:37\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "{\"userId\":\"c924f704-8877-457d-b60d-84f16499d6e5\",\"username\":\"Admin\",\"password\":\"Admin@123\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6IkFkbWluIiwicGFzc3dvcmQiOiJBZG1pbkAxMjMiLCJpYXQiOjE2OTIwOTc3MzV9.TpAmn1kQ1xuATYZq4mX2lYvEvS95YsVHhfiZrrgGe3c\",\"expires\":\"2023-08-22T11:08:55.000Z\",\"created_date\":\"2020-06-21T07:34:08.000Z\",\"isActive\":false}\n"
+                    },
+                    {
+                      "text": "https://demoqa.com/BookStore/v1/Books\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-08-15T15:02:29.645Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "D:\\SarinPS_GM_Assignment\\tests\\e2e\\api\\Service.test.ts",
+                    "column": 37,
+                    "line": 108
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "0b44f1cfde13a232ace9-d7610c512cc6c1fb32f9",
+          "file": "tests/e2e/api/Service.test.ts",
+          "line": 96,
+          "column": 5
+        },
+        {
+          "title": "Trying to delete already deleted book from user",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "status": "passed",
+                  "duration": 197,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{\"userId\":\"c924f704-8877-457d-b60d-84f16499d6e5\",\"username\":\"Admin\",\"password\":\"Admin@123\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6IkFkbWluIiwicGFzc3dvcmQiOiJBZG1pbkAxMjMiLCJpYXQiOjE2OTIwOTc3MzV9.TpAmn1kQ1xuATYZq4mX2lYvEvS95YsVHhfiZrrgGe3c\",\"expires\":\"2023-08-22T11:08:55.000Z\",\"created_date\":\"2020-06-21T07:34:08.000Z\",\"isActive\":false}\n"
+                    },
+                    {
+                      "text": "https://demoqa.com/BookStore/v1/Books\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-08-15T15:02:29.659Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0b44f1cfde13a232ace9-80e8cd908c3c8f1d9773",
+          "file": "tests/e2e/api/Service.test.ts",
+          "line": 113,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "tests\\e2e\\ui\\TC_01_Verify_user_enter_new.test.ts",
+      "file": "tests/e2e/ui/TC_01_Verify_user_enter_new.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "DEMOQAAutomation",
+          "file": "tests/e2e/ui/TC_01_Verify_user_enter_new.test.ts",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC_01a Verify user can enter new data into the table",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "status": "passed",
+                      "duration": 8612,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-15T15:02:30.612Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e28b394207468d940319-f310c32913c6b8c2ace6",
+              "file": "tests/e2e/ui/TC_01_Verify_user_enter_new.test.ts",
+              "line": 27,
+              "column": 9
+            },
+            {
+              "title": "TC_01b Verify user can edit the row in a table",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "status": "passed",
+                      "duration": 14587,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-15T15:02:31.713Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e28b394207468d940319-ddd64c1f72836ba12d5f",
+              "file": "tests/e2e/ui/TC_01_Verify_user_enter_new.test.ts",
+              "line": 55,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "tests\\e2e\\ui\\TC_02_Verify_broken_image.test.ts",
+      "file": "tests/e2e/ui/TC_02_Verify_broken_image.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "DEMOQAAutomation",
+          "file": "tests/e2e/ui/TC_02_Verify_broken_image.test.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC_02 Verify broken image",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 6916,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "4 Is the count of total Images\n"
+                        },
+                        {
+                          "text": "https://ad.plus/adplus-advertising.svg\n"
+                        },
+                        {
+                          "text": "\u001b[33m200\u001b[39m\n"
+                        },
+                        {
+                          "text": "Verified\n"
+                        },
+                        {
+                          "text": "/images/Toolsqa.jpg\n"
+                        },
+                        {
+                          "text": "\u001b[33m200\u001b[39m\n"
+                        },
+                        {
+                          "text": "Verified\n"
+                        },
+                        {
+                          "text": "/images/Toolsqa.jpg\n"
+                        },
+                        {
+                          "text": "\u001b[33m200\u001b[39m\n"
+                        },
+                        {
+                          "text": "Verified\n"
+                        },
+                        {
+                          "text": "/images/Toolsqa_1.jpg\n"
+                        },
+                        {
+                          "text": "\u001b[33m200\u001b[39m\n"
+                        },
+                        {
+                          "text": "Verified\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-15T15:02:30.696Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e7b54e22aebb009964f4-845379cbea60ca90cc3c",
+              "file": "tests/e2e/ui/TC_02_Verify_broken_image.test.ts",
+              "line": 24,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "tests\\e2e\\ui\\TC_03_Verify_form_Submit.test.ts",
+      "file": "tests/e2e/ui/TC_03_Verify_form_Submit.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "DEMOQAAutomation",
+          "file": "tests/e2e/ui/TC_03_Verify_form_Submit.test.ts",
+          "line": 10,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC_03 Verify user can submit the form",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "status": "timedOut",
+                      "duration": 30007,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-15T15:02:31.872Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c8e335f8c3e0c03c6056-b88a036ce937beacb59c",
+              "file": "tests/e2e/ui/TC_03_Verify_form_Submit.test.ts",
+              "line": 31,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "tests\\e2e\\ui\\TC_04_Verify_progress_bar.test.ts",
+      "file": "tests/e2e/ui/TC_04_Verify_progress_bar.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "DEMOQAAutomation",
+          "file": "tests/e2e/ui/TC_04_Verify_progress_bar.test.ts",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC_04Verify the progress bar",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "status": "passed",
+                      "duration": 28255,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-15T15:02:47.389Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5844c70243bafd735ac1-07d39ad1848ee18bfb6b",
+              "file": "tests/e2e/ui/TC_04_Verify_progress_bar.test.ts",
+              "line": 28,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "tests\\e2e\\ui\\TC_05_Verify_tooltip.test.ts",
+      "file": "tests/e2e/ui/TC_05_Verify_tooltip.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "DEMOQAAutomation",
+          "file": "tests/e2e/ui/TC_05_Verify_tooltip.test.ts",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC_05Verify the tooltip",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 18415,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-15T15:02:51.148Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "24f63853b610bd163813-e8f8ac8f5f0013e119da",
+              "file": "tests/e2e/ui/TC_05_Verify_tooltip.test.ts",
+              "line": 28,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "tests\\e2e\\ui\\TC_06_Verify_drag_drop.test.ts",
+      "file": "tests/e2e/ui/TC_06_Verify_drag_drop.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "DEMOQAAutomation",
+          "file": "tests/e2e/ui/TC_06_Verify_drag_drop.test.ts",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC_06 Verify user can drag and drop",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "status": "passed",
+                      "duration": 5283,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-15T15:03:01.043Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "178315f68e869b6be24b-df2738df8ce5f4310ed2",
+              "file": "tests/e2e/ui/TC_06_Verify_drag_drop.test.ts",
+              "line": 28,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": []
+}
